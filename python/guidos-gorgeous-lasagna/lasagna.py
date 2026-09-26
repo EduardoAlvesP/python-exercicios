@@ -13,7 +13,7 @@ def preparation_time_in_minutes(number_of_layers):
     '''Função que recebe um numero inteiro e calcula o dobro '''
     return number_of_layers * 2
 
-def bake_time_remaining(t):
+def bake_time_remaining(time):
     """Calculate the bake time remaining.
 
     Parameters:
@@ -26,21 +26,15 @@ def bake_time_remaining(t):
     an argument and returns how many minutes the lasagna still needs to bake
     based on the `EXPECTED_BAKE_TIME`.
     """
-    return EXPECTED_BAKE_TIME - t
-
-
-#TODO (student): Define the 'preparation_time_in_minutes()' function below.
-# To avoid the use of magic numbers (see: https://en.wikipedia.org/wiki/Magic_number_(programming)), you should define a PREPARATION_TIME constant.
-# You can do that on the line below the 'EXPECTED_BAKE_TIME' constant.
-# This will make it easier to do calculations, and make changes to your code.
+    return EXPECTED_BAKE_TIME - time
 
 
 
-#TODO (student): define the 'elapsed_time_in_minutes()' function below.
+
+
+
 
 def elapsed_time_in_minutes(number_of_layers,elapsed_bake_time):
     '''Função que recebe dois inteiros e calcula o tempo total '''
     return preparation_time_in_minutes(number_of_layers) + elapsed_bake_time
 
-# TODO (student): Remember to go back and add docstrings to all your functions
-#  (you can copy and then alter the one from bake_time_remaining.)
